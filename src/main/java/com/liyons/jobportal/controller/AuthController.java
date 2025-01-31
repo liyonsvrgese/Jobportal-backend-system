@@ -17,16 +17,12 @@ public class AuthController {
         this.jwtUtils = jwtUtils;
     }
 
-    // Login endpoint
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody LoginRequest loginRequest) {
-        // Simulate authentication (you should replace this with actual authentication logic)
         String email = loginRequest.getEmail();
         String password = loginRequest.getPassword();
 
-        // Example: Use actual user service to verify email and password
         if (isValidUser(email, password)) {
-            // Generate JWT token
             String token = jwtUtils.generateToken(email);
             return ResponseEntity.ok(new JwtResponse(token));
         } else {
@@ -34,9 +30,8 @@ public class AuthController {
         }
     }
 
-    // Dummy authentication logic (replace this with real logic, such as checking against the database)
     private boolean isValidUser(String email, String password) {
-        return "test@example.com".equals(email) && "password".equals(password);  // Example logic
+        return "test@example.com".equals(email) && "password".equals(password);
     }
 
     public static class LoginRequest {
