@@ -1,6 +1,6 @@
 package com.liyons.jobportal.service;
 
-import com.liyons.jobportal.model.User;
+import com.liyons.jobportal.entity.User;
 import com.liyons.jobportal.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

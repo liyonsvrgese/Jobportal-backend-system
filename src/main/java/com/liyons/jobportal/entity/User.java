@@ -1,4 +1,4 @@
-package com.liyons.jobportal.model;
+package com.liyons.jobportal.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -11,15 +11,15 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    private String name;
-    private String email;
+    private String userName;
     private String password;
+    private String role; //User or Recruiter
 
     public User() {}
 
-    public User(String name, String email, String password) {
-        this.name = name;
-        this.email = email;
+    public User(String name, String role, String password) {
+        this.userName = name;
+        this.role = role;
         this.password = password;
     }
     public Long getId() {
@@ -30,20 +30,20 @@ public class User {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
-    public String getEmail() {
-        return email;
+    public String getRole() {
+        return role;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setRole(String role) {
+        this.role = role;
     }
 
     public String getPassword() {
