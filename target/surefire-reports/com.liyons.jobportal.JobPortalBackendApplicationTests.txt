@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.liyons.jobportal.JobPortalBackendApplicationTests
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.715 s -- in com.liyons.jobportal.JobPortalBackendApplicationTests

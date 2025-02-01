@@ -1,5 +1,0 @@
-com\liyons\jobportal\JobPortalBackendApplication.class
-com\liyons\jobportal\repository\UserRepository.class
-com\liyons\jobportal\model\User.class
-com\liyons\jobportal\service\UserService.class
-com\liyons\jobportal\controller\UserController.class
